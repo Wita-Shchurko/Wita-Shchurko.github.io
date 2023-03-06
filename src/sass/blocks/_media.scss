@@ -1,0 +1,11 @@
+@media (max-width: 767px) {
+    nav li a:hover:after {
+        display: none;
+    }
+    aside.social {
+        display: none;
+    }
+    .main-header .overlay-navigation {
+        height: 10%;
+    }
+}

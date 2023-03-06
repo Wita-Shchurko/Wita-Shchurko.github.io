@@ -1,0 +1,108 @@
+.main-header {
+    position: relative;
+}
+
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    z-index: 2;
+    &__header {
+        z-index: 1;
+        transform: translate3d(0, calc(var(--scrollTop)/2), 0);
+        will-change: transform;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: calc($index * 1.1);
+        text-shadow: 0 0 4px #c5b05d;
+        margin-top: calc($index * -5);
+    }
+}
+
+.layers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    &__base {
+        transform: translate3d(0, calc(var(--scrollTop)/1.6), 0);
+        z-index: 0;
+    }
+    &__middle {
+        transform: translate3d(0, calc(var(--scrollTop)/2.5), 0);
+    }
+    &__front {
+        transform: translate3d(0, calc(var(--scrollTop)/5.7), 0);
+    }
+    &__title {
+        font-weight: 900;
+        font-size: calc($index * 1.8);
+        letter-spacing: calc($index / 20);
+    }
+}
+
+.social {
+    z-index: 200;
+    position: fixed;
+    left: -130px;
+    width: 310px;
+    top: 50vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    transform: rotate(-90deg);
+    &__divider {
+            height: 2px;
+            border: none;
+            width: 60px;
+            background-color: $text-color;
+    }
+    &__icon {
+        color: $text-color;
+        padding-right: 2px;
+        &:hover {
+            cursor: pointer;
+            color: $text-color;
+            text-shadow: 0 0 20px #c5b05d;
+            text-decoration: none;
+        }
+    }  
+}
+
+.hamburger {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 1s ease-out;
+    align-items: end;
+    height: calc($index);
+    width: calc($index * 2);
+    z-index: 200;
+    right: calc($index);
+    top: calc($index);
+    &:hover {
+        cursor: pointer;
+    }
+    span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: $text-color;
+        box-shadow: 0 0 15px #c5b05d;
+    }
+    span.hamburger_short {
+        width: 80%;
+    }
+    &_active {
+        transition: all 1s ease-out;
+        align-items: start;
+    }
+}
