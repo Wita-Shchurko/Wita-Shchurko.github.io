@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Larsseit';
+    src: url('Larsseit.eot');
+    src: local('Larsseit'),
+        url('Larsseit.eot?#iefix') format('embedded-opentype'),
+        url('Larsseit.woff2') format('woff2'),
+        url('Larsseit.woff') format('woff'),
+        url('Larsseit.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Larsseit';
+    src: url('Larsseit-Light.eot');
+    src: local('Larsseit Light'), local('Larsseit-Light'),
+        url('Larsseit-Light.eot?#iefix') format('embedded-opentype'),
+        url('Larsseit-Light.woff2') format('woff2'),
+        url('Larsseit-Light.woff') format('woff'),
+        url('Larsseit-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Larsseit';
+    src: url('Larsseit-Bold.eot');
+    src: local('Larsseit Bold'), local('Larsseit-Bold'),
+        url('Larsseit-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Larsseit-Bold.woff2') format('woff2'),
+        url('Larsseit-Bold.woff') format('woff'),
+        url('Larsseit-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Larsseit';
+    src: url('Larsseit-Medium.eot');
+    src: local('Larsseit Medium'), local('Larsseit-Medium'),
+        url('Larsseit-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Larsseit-Medium.woff2') format('woff2'),
+        url('Larsseit-Medium.woff') format('woff'),
+        url('Larsseit-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
