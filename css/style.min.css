@@ -327,7 +327,7 @@ nav li a {
     font-weight: 500;
     letter-spacing: calc((1vh + 1vw)/ 5);
     display: block;
-    font-size: calc(1vh + 1vw);
+    font-size: calc(2vw);
 }
 nav li a:after {
     content: attr(data-content);
