@@ -1,15 +1,12 @@
-import globals from "globals";
-import pluginJs from "@eslint/js";
-import mateAcademyConfig from "@mate-academy/eslint-config";
+import js from "@eslint/js";
 
 export default [
+  js.configs.recommended,
+
   {
-    files: ["**/*.js"],
-    languageOptions: {
-      sourceType: "script",
-      globals: globals.browser,
+    rules: {
+      "no-unused-vars": "warn",
+      "no-undef": "warn",
     },
-    ...pluginJs.configs.recommended,
-    ...mateAcademyConfig,
   },
 ];
