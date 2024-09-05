@@ -95,6 +95,35 @@
     <link rel="manifest" href="icons/favicon/manifest.json" />
     <link rel="stylesheet" href="css/scrollbar.css" />
     <link rel="stylesheet" href="css/style.min.css" />
+    <style>
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            pointer-events: none;
+        }
+        #overlay .content {
+            background-color: rgb(245, 245, 245);
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #overlay h1 {
+            margin: 0 0 20px;
+            color: black;
+        }
+        #overlay img {
+            max-width: 100px;
+        }
+    </style>
     <script
       src="https://code.jquery.com/jquery-3.6.3.min.js"
       integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
@@ -104,6 +133,14 @@
   </head>
 
   <body>
+    <div id="overlay">
+        <div class="content">
+            <h1>Oops… An update is in progress. Please check back later.</h1>
+            <img src="https://cdn.dribbble.com/users/926537/screenshots/8768655/media/0eb8fcc9f2b8a55c589cfabd6cc89d94.gif" alt="Cat developer">
+        </div>
+    </div>
+	
+    </div>
     <header class="main-header">
       <div class="hamburger open-overlay">
         <span class="hamburger_short"></span><span></span
