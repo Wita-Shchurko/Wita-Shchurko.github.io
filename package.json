@@ -8,17 +8,21 @@
     "format": "prettier . --ignore-path .gitignore --write",
     "lint": "eslint . --fix",
     "fix": "npm run format & npm run lint",
-    "prepare": "husky"
+    "prepare": "husky",
+    "minify:css": "cleancss -o css/style.min.css css/style.css",
+    "watch:css": "onchange 'css/style.css' -- npm run minify:css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^9.2.0",
     "@mate-academy/eslint-config": "^0.0.29",
+    "clean-css-cli": "^5.6.3",
     "eslint": "^9.2.0",
     "globals": "^15.2.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
+    "onchange": "^7.1.0",
     "prettier": "3.2.5"
   },
   "lint-staged": {
